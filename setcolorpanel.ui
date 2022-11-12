@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetColorPanel</class>
+ <widget class="QDialog" name="SetColorPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>708</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ColorPanel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="applications-multimedia"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="3">
+    <widget class="QColorDialog" name="colorWidget" native="true"/>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="nameForm"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="selectGraphName">
+     <property name="text">
+      <string>Select a Graph Name</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="cancelBtn">
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="yesBtn">
+     <property name="text">
+      <string>Yes</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QColorDialog</class>
+   <extends>QWidget</extends>
+   <header location="global">qcolordialog.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
